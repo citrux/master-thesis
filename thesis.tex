@@ -1,0 +1,32 @@
+\documentclass{defective}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage[derivative]{hedmaths}
+\numberwithin{equation}{section}
+\usepackage{braket}
+\usepackage[square, numbers, sort&compress]{natbib}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\newcommand*{\No}{\textnumero}
+\graphicspath{{figures/}}
+\addto\captionsrussian{%
+  \renewcommand{\figurename}{Рисунок}%
+  \renewcommand{\refname}{Список использованных источников}%
+}
+\renewcommand*{\arraystretch}{1.2}
+\linespread{1.213}
+\tolerance=9999
+\relpenalty=10000
+\binoppenalty=10000
+\begin{document}
+    \include{00-title}
+    \include{01-referat}
+    \tableofcontents
+    \include{02-definitions}
+    \include{03-intro}
+    \include{04-main}
+    \include{05-conclusion}
+    \include{06-literature}
+\end{document}
